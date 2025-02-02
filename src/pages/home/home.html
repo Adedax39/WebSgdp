@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Below Water - Home</title>
+  <link rel="stylesheet" href="../home/home.css">
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<main>
+  <h1>Welcome to Life Below Water</h1>
+  <p>Join us in protecting our oceans!</p>
+</main>
+
+<div id="footer-container"></div>
+
+<script>
+  // Load navbar and footer dynamically
+  fetch("../components/navbar.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("navbar-container").innerHTML = data);
+
+  fetch("../components/footer.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("footer-container").innerHTML = data);
+</script>
+
+</body>
+</html>

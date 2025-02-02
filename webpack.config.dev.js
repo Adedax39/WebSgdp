@@ -1,13 +1,14 @@
-const { merge } = require('webpack-merge');
-const common = require('./webpack.common.js');
-
-module.exports = merge(common, {
+module.exports = {
   mode: 'development',
-  devtool: 'inline-source-map',
-  devServer: {
-    liveReload: true,
-    hot: true,
-    open: true,
-    static: ['./'],
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: __dirname + '/dist',
   },
-});
+  devServer: {
+    static: {
+      directory: './public',  // Serve static files from the 'public' folder
+    },
+    open: true,  // Automatically opens the browser
+  },
+};
