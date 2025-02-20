@@ -7,14 +7,56 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+/* ============================= */
+/* 🌍 1. Global Styles & Reset   */
+/* ============================= */
+:root {
+  --primary-blue: #023047; /* Ocean Blue */
+  --secondary-blue: #8ecae6; /* Lighter Aqua */
+  --dark-blue: #0077b6; /* Deep Sea */
+  --light-blue: #90e0ef; /* Soft Water Blue */
+  --white: #ffffff; /* Soft White */
+  --gray: #6c757d; /* Secondary Text */
+  --black: #0a0a0a; /* Main Text */
+  --yellow: #ffb703; /* Call-to-Action */
+  --dark-yellow: #fb8500; /* Alert, Highlights */
+
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+  --font-tertiary: "Nunito", sans-serif;
+
+  --font-size-body: 15px;
+  --line-height-body: 1.8;
+  --letter-spacing: 0.5px;
+
+  --font-size-h1: 48px;
+  --font-size-h2: 40px;
+  --font-size-h3: 32px;
+  --font-size-h4: 26px;
+  --font-size-h5: 22px;
+  --font-size-h6: 18px;
+}
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+  scroll-behavior: smooth;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-body);
+  line-height: 1.4;  
+}
+
+p {
+  font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-h1);
 }
 
 /*
@@ -244,4 +286,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
