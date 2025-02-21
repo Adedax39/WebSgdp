@@ -46,6 +46,7 @@ html {
   font-family: var(--font-primary);
   font-size: var(--font-size-body);
   line-height: 1.4;  
+  box-sizing: border-box;
 }
 
 p {
