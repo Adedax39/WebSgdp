@@ -1,0 +1,67 @@
+/* Ocean-themed navbar */
+.navbar {
+  background-color: #0077b6; /* Deep ocean blue */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #90e0ef; /* Light ocean blue */
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #0077b6;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
