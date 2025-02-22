@@ -1,3 +1,3 @@
-// function toggleMenu() {
-//   document.querySelector(".nav-links").classList.toggle("show");
-// }
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("show");
+}

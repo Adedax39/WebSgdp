@@ -3,27 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life Below Water - Home</title>
-  <link rel="stylesheet" href="../home/home.css">
+  <title>Home | Life Below Water</title>
+  <link rel="stylesheet" href="./home.css">
 </head>
 <body>
 
+<!-- Navbar -->
 <div id="navbar-container"></div>
 
 <main>
   <h1>Welcome to Life Below Water</h1>
-  <p>Join us in protecting our oceans!</p>
+  <p>Join us in protecting marine life and making a difference!</p>
 </main>
 
+<!-- Footer -->
 <div id="footer-container"></div>
 
 <script>
   // Load navbar and footer dynamically
-  fetch("../components/navbar.html")
+  fetch("../../Components/navbar/navbar.html")
     .then(response => response.text())
-    .then(data => document.getElementById("navbar-container").innerHTML = data);
+    .then(data => document.getElementById("navbar-container").innerHTML = data)
+    .then(() => {
+      // Attach JS file for navbar functionalities (hamburger menu)
+      const script = document.createElement("script");
+      script.src = "../../components/navbar.js";
+      document.body.appendChild(script);
+    });
 
-  fetch("../components/footer.html")
+  fetch("../../Components/footer/footer.html")
     .then(response => response.text())
     .then(data => document.getElementById("footer-container").innerHTML = data);
 </script>
