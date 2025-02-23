@@ -34,24 +34,15 @@
 </head>
 
 <body>
+  
   <div id="header-placeholder"></div>
 
+  <div id="content"></div>
 
-
-
-
+  <div id="footer-placeholder"></div>
 
 
 </body>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch("/components/header.html") //Fetch the header.html file
-      .then((response) => response.text()) //Convert it to a text
-      .then((data) => {
-        document.getElementById("header-placeholder").innerHTML = data; //Insert into the div
-      })
-      .catch((error) => console.log("Error loading the component", error));
-  });
-</script>
+<script src="/js/app.js"></script>
 
 </html>

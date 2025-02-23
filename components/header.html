@@ -36,12 +36,12 @@
         <nav class="navbar navbar-expand-sm navbar-dark nav-bar center-align mx-auto py-1">
             <div class="container">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item me-4"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item me-4"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Statistics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Our Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sitemap</a></li>
+                    <li class="nav-item me-4"><a class="nav-link" href="/home" id="home-link">Home</a></li>
+                    <li class="nav-item me-4"><a class="nav-link" href="/about" id="about-link">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/statistics" id="statistics-link">Statistics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/feedback" id="feedback-link">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/team" id="team-link">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/sitemap" id="sitemap-link">Sitemap</a></li>
                 </ul>
             </div>
         </nav>
@@ -49,19 +49,18 @@
         <!-- Overlay Menu -->
         <div id="menu-overlay" class="overlay">
             <div class="overlay-content">
-                <div class="col-md-2 d-flex justify-content-between align-items-center">
-                    <i class="bi bi-x-square" id="side-menu-close"
-                        onclick="closeSideMenu()"></i>
+                <div class="closeSideMenu d-flex justify-content-end">
+                    <i class="bi bi-x-square" id="side-menu-close" onclick="closeSideMenu()"></i>
                 </div>
-
                 <ul class="navbar-nav">
-                    <li class="nav-item me-4 my-3"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item me-4"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Statistics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Our Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sitemap</a></li>
+                    <li class="nav-item me-4 my-3"><a class="nav-link" href="/home">Home</a></li>
+                    <li class="nav-item me-4"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/statistics">Statistics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/feedback">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/team">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/sitemap">Sitemap</a></li>
                 </ul>
             </div>
         </div>
+
 </header>

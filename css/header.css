@@ -1,169 +1,217 @@
 /* Mobile: Center align the nav and reduce padding */
 @media (max-width: 575px) {
-    #mobile-hr {
-        display: block !important; 
-        border: 2px solid #023047 !important;
-        margin: 10px 0;
-    }
+  .fw-semibold {
+    padding-top: 20px;
+    font-size: var(--font-size-h2) !important;
+  }
+  #mobile-hr {
+    display: block !important;
+    border: 1px solid #023047 !important;
+    margin-top: 1rem;
+  }
 
-    #side-menu-close {
-        display: block !important;
-        cursor: pointer;
-        color: #023047;
-        margin-left: auto;
-    }
+  #side-menu-close {
+    display: block !important;
+    cursor: pointer;
+    color: white; /* Change icon color to white */
+    font-size: 25px; /* Increase the icon size */
+    z-index: 2; /* Placing the icon above the hue*/
+    align-items: end !important;
+  }
 
-    .navbar {
-        display: none !important;
-        padding: 5px;
-        text-align: center;
-    }
+  .navbar {
+    display: none !important;
+    padding: 5px;
+    text-align: center;
+  }
 
-    #menu-toggle {
-        font-size: 30px;
-        cursor: pointer;
-        color: #023047;
-        display: block !important;
-    }
+  #menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    color: #023047;
+    display: block !important;
+  }
 }
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 160px !important;
+  }
+
+  .fw-semibold {
+    font-size: var(--font-size-h3) !important;
+  }
+
+  .blue-text {
+    color: var(--dark-blue);
+    font-size: var(--font-size-h4) !important;
+    font-weight: 500;
+  }
+
+  /* Navigation Bar */
+  .nav-bar {
+    background-color: var(--dark-blue);
+    border-radius: 30px 30px 0 0;
+    max-width: 95% !important;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+
 
 /* Top Bar */
 .top-bar {
-    background-color: var(--primary-blue);
-    font-size: 14px;
+  background-color: var(--primary-blue);
+  font-size: 14px;
 }
 
 /* Header Main */
 .header-main {
-    background-color: white;
+  background-color: white;
 }
 
 /* Logo */
 .logo {
-    max-width: 250px;
+  max-width: 250px;
 }
 
 /* User Icon */
 .user-icon {
-    font-size: 30px;
-    color: var(--primary-blue);
-    cursor: pointer;
-    margin-left: auto; /* Pushes the icon to the right */
+  font-size: 30px;
+  color: var(--primary-blue);
+  cursor: pointer;
+  margin-left: auto; /* Pushes the icon to the right */
 }
 
 /* Title Section */
 .fw-semibold {
-    font-size: var(--font-size-h1);
-    font-weight: 600;
+  font-size: var(--font-size-h1);
+  font-weight: 600;
 }
 
 .blue-text {
-    color: var(--dark-blue);
-    font-size: var(--font-size-h2);
-    font-weight: 500;
+  color: var(--dark-blue);
+  font-size: var(--font-size-h2);
+  font-weight: 500;
 }
 
 /* Hide the <hr> by default */
-#mobile-hr, #menu-toggle, #side-menu-close {
-    display: none;
+#mobile-hr,
+#menu-toggle,
+#side-menu-close {
+  display: none;
 }
 
 /* Navigation Bar */
 .nav-bar {
-    background-color: var(--dark-blue);
-    border-radius: 30px 30px 0 0;
-    max-width: 90%;
-    align-items: center;
-    margin-top: 20px;
+  background-color: var(--dark-blue);
+  border-radius: 30px 30px 0 0;
+  max-width: 90%;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .navbar-nav .nav-link {
-    color: white;
-    font-weight: 500;
-    font-size: 16px;
-    padding: 10px;
-    transition: 0.3s;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+  transition: 0.3s;
 }
 
-.navbar-nav  {
-    gap: 30px;
+.navbar-nav .nav-link.active {
+    color: var(--dark-yellow);
+    font-weight: bold;
+}
+
+.navbar-nav {
+  gap: 30px;
 }
 
 .navbar-nav .nav-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
+
+.closeSideMenu {
+  width: 100%;
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+
+
 
 /* Overlay Menu */
 .overlay {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin-top: 35px; 
-    width: 50%;
-    height: 100%;
-    z-index: 999;
-    transition: 0.3s ease-in-out;
-    overflow-y: auto; /* enables scroling */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 35px;
+  width: 50%;
+  height: 100%;
+  z-index: 999;
+  transition: 0.3s ease-in-out;
+  overflow-y: auto; /* enables scroling */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .overlay-content {
-    position: relative;
-    width: 100%;
-    top: 0;
-    height: 100%;
-    padding: 20px;
-    text-align: center;
-    background-image: url(/img/side-menu-sea.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  z-index: 2; /* content is above the dim effect*/
+  width: 100%;
+  top: 0;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  background-image: url(/img/side-menu-sea.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Add a dark hue (overlay) */
 .overlay-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adjust opacity for dim effect */
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity for dim effect */
+  z-index: 0; /* Dim effect is below the content -overlay */
 }
 
 /* Make sure text is above the hue effect */
 .overlay-content .navbar-nav {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .overlay-content .nav-item {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 .overlay-content .nav-link {
-    color: var(--white);
-    font-size: 18px;
-    padding: 10px 20px;
-    display: block;
-    transition: background 0.3s ease-in-out;
+  color: var(--white);
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  transition: background 0.3s ease-in-out;
 }
 
 /* Hover Effect */
 .overlay-content .nav-link:hover {
-    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
-    border-radius: 5px; /* Optional: Rounded corners */
+  background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+  border-radius: 5px; /* Optional: Rounded corners */
 }
 
 /* Show the overlay */
 .overlay.show {
-    display: block;
+  display: flex !important;
 }
