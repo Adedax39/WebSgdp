@@ -53,6 +53,12 @@ body {
   padding: 0;
 }
 
+.container {
+  width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 p {
   font-family: var(--font-primary);
 }
