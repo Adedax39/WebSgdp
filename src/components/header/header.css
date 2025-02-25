@@ -1,22 +1,31 @@
 /*Mobile: */
 @media (max-width: 575px) {
+
+  .top-bar P {
+    padding: 2px 0;
+    font-size: 10px !important;
+  }
+
+  .fw-semibold {
+    font-size: var(--font-size-h2) !important;
+  }
+
+  .blue-text {
+    color: var(--dark-blue);
+    font-size: var(--font-size-h3) !important;
+    font-weight: 500;
+  }
+
+
   .fw-semibold {
     padding-top: 20px;
     font-size: var(--font-size-h2) !important;
   }
+
   #mobile-hr {
     display: block !important;
     border: 1px solid #023047 !important;
     margin-top: 2px;
-  }
-
-  #side-menu-close {
-    display: block !important;
-    cursor: pointer;
-    color: white; /* Change icon color to white */
-    font-size: 25px; /* Increase the icon size */
-    z-index: 2; /* Placing the icon above the hue*/
-    align-items: end !important;
   }
 
   .navbar {
@@ -32,33 +41,38 @@
     display: block !important;
   }
 
-  .menu_user{
+  .menu_user {
     width: 100% !important; /* Ensure it takes full width */
     display: flex;
     justify-content: space-between !important; /* Spread items to left and right */
     align-items: center; /* Align items vertically */
   }
 
-  .user-icon, .menu-icon {
+  .user-icon,
+  .menu-icon {
     margin: 0 !important;
     padding: 0 !important;
-}
+  }
+
+  .user-icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+  }
+
+  .overlay {
+    width: 50% !important;
+  }
+
+  .overlay-content::before {
+    width: 50% !important;
+  }
 }
 
 /* Tablet:  */
 @media (max-width: 768px) {
   .logo {
     max-width: 160px !important;
-  }
-
-  .fw-semibold {
-    font-size: var(--font-size-h3) !important;
-  }
-
-  .blue-text {
-    color: var(--dark-blue);
-    font-size: var(--font-size-h4) !important;
-    font-weight: 500;
   }
 
   #mobile-hr {
@@ -68,7 +82,7 @@
   }
 
   /*Navigation bar */
-  .menu_user{
+  .menu_user {
     width: 100% !important; /* Ensure it takes full width */
     display: flex;
     justify-content: space-between !important; /* Spread items to left and right */
@@ -76,73 +90,75 @@
   }
 
   #menu-toggle {
-    font-size: 30px;
     cursor: pointer;
     color: #023047;
     display: block !important;
     align-items: end !important;
-    margin-right: auto;    
+    margin-right: auto;
   }
 
-  /* .user-icon {
-   margin-right: auto;
-   font-size: 30px;
-  } */
+  .user-icon {
+    display: none;
+  }
 
-  .user-icon, .menu-icon {
+  .user-icon,
+  .menu-icon {
     margin: 0 !important;
     padding: 0 !important;
-}
+    font-size: 20px !important;
+  }
 
   .navbar {
     display: none !important;
-    padding: 5px;
-    text-align: center;
   }
 
-  #side-menu-close {
-    display: block !important;
-    cursor: pointer;
-    color: white; /* Change icon color to white */
-    font-size: 25px; /* Increase the icon size */
-    z-index: 2; /* Placing the icon above the hue*/
-    align-items: end !important;
-  }  
+  .overlay {
+    width: 25%;
+  }
 
+  .overlay-content::before {
+    width: 25%;
+  }
 }
 
 /* Laptop -1024 */
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .logo {
     max-width: 140px !important;
   }
 
   .fw-semibold {
-    font-size: var(--font-size-h3) !important;
+    font-size: var(--font-size-h2) !important;
   }
 
   .blue-text {
     color: var(--dark-blue);
-    font-size: var(--font-size-h4) !important;
+    font-size: var(--font-size-h3) !important;
     font-weight: 500;
   }
 
-/* Navigation Bar */
-.nav-bar {
-  max-width: 100% !important;
-}
+  /* Navigation Bar */
+  .nav-bar {
+    max-width: 100% !important;
+  }
 
-.navbar-nav .nav-link {
-  font-size: 10px !important;
-}
-}
+  .navbar-nav .nav-link {
+    font-size: 12px !important;
+  }
 
-
+  .user-icon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
 
 /* Top Bar */
 .top-bar {
   background-color: var(--primary-blue);
-  font-size: 14px;
+}
+
+.top-bar P {
+  font-size: 12px;
 }
 
 /* Header Main */
@@ -157,12 +173,13 @@
 
 .menu_user {
   display: flex;
-
+  margin-top: -30px !important;
 }
 
 /*User Icon */
 .user-icon {
-  font-size: 30px;
+  width: 40px;
+  height: 40px;
   color: var(--primary-blue);
   cursor: pointer;
   margin-left: auto; /* Pushes the icon to the right */
@@ -190,23 +207,23 @@
 /* Navigation Bar */
 .nav-bar {
   background-color: var(--dark-blue);
-  border-radius: 30px 30px 0 0;
-  max-width: 90%;
+  /* border-radius: 30px 30px 0 0; */
+  max-width: 100%;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .navbar-nav .nav-link {
   color: white;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px;
   transition: 0.3s;
-} 
+}
 
 .navbar-nav .nav-link.active {
-    color: var(--dark-yellow);
-    font-weight: bold;
+  color: var(--dark-yellow);
+  font-weight: bold;
 }
 
 .navbar-nav {
@@ -217,11 +234,20 @@
   text-decoration: underline;
 }
 
-.closeSideMenu {
+.overlay-content .closeSideMenu {
   width: 100%;
   margin-bottom: 10px;
+  font-size: 10px !important;
 }
 
+#side-menu-close {
+  display: block !important;
+  cursor: pointer;
+  color: white; /* Change icon color to white */
+  font-size: 18px; /* Increase the icon size */
+  z-index: 2; /* Placing the icon above the hue*/
+  align-items: end !important;
+}
 
 /* Overlay Menu */
 .overlay {
@@ -230,7 +256,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  margin-top: 35px;
+  margin-top: 33px;
   width: 50%;
   height: 100%;
   z-index: 999;
@@ -253,10 +279,9 @@
   display: block;
   flex-direction: column;
   align-items: center;
-  overflow-y: auto; 
+  overflow-y: auto;
   padding-bottom: 10rem;
 }
-
 
 /* Add a dark hue (overlay) */
 .overlay-content::before {
@@ -264,12 +289,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  margin-top: 2.3rem;
+  margin-top: 2.2rem;
   width: 50%;
   height: 100% !important;
   background: rgba(0, 0, 0, 0.5); /* Adjust opacity for dim effect */
   z-index: 0; /* Dim effect is below the content -overlay */
-  overflow-y: auto; 
+  overflow-y: auto;
 }
 
 /* Make sure text is above the hue effect */
@@ -286,8 +311,8 @@
 
 .overlay-content .nav-link {
   color: var(--white);
-  font-size:  16px !important;
-  display: block ;
+  font-size: 16px !important;
+  display: block;
   /* transition: background 0.3s ease-in-out; */
 }
 
