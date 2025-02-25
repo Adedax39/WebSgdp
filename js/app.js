@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //function to attach navigation listners
   function attachNavListeners() {
-    
+
     const navLinks = document.querySelectorAll(".navbar-nav .nav-link, #menu-overlay .nav-link, #profile-link");
 
     navLinks.forEach(link => {
       link.addEventListener('click', function (event) {
-        
+
         event.preventDefault();
-        
+
         const page = link.getAttribute('href');
 
         // loadComponent("content", `/src/pages/${page}${page}.html`);
@@ -45,6 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Default content page (Home)
   // const initialPage = window.location.pathname === "/" ? "/src/pages/home/home.html" : window.location.pathname;
-  loadComponent("content", "/src/pages/home/home.html");
+  loadComponent("content", "/src/pages/SplashScreen/splashscreen.html");
+
+  setTimeout(() => {
+    loadComponent("content", "/src/pages/home/home.html");
+  }, 5000); // 4 seconds delay
 
 })
