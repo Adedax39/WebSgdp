@@ -1,0 +1,169 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Inter;
+}
+
+/* Fullscreen background */
+.splash-container {
+    width: 100vw;
+    height: 100vh;
+    background: url('./underwater.png') no-repeat center center/cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Content Box */
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.logo1, .logo2 {
+    width: 150px; /* Increase size */
+    height: auto;
+    filter: brightness(2) contrast(1.2); /* Brighten the logos */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); /* White glow */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent dark background */
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px; /* Space between logos */
+
+}
+
+.content img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* Headings */
+h1 {
+    font-size: 75px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+    margin-top: 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Description Text */
+.description {
+    font-size: 20px;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0.9;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Team List */
+.team {
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(144, 224, 239);
+    margin-top: 10px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+/* Tablet view (Portrait) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px; /* Smaller heading */
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller subheading */
+    }
+
+    .description {
+        font-size: 16px; /* Smaller description text */
+        width: 90%; /* Slightly wider text area */
+    }
+
+    .team {
+        font-size: 16px; /* Smaller team text */
+    }
+
+    .logo1, .logo2 {
+        width: 120px; /* Slightly smaller logos */
+    }
+
+    .content {
+        padding: 20px; /* Less padding */
+    }
+}
+
+/* Mobile view (Portrait) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px; /* Even smaller heading */
+    }
+
+    h2 {
+        font-size: 18px; /* Smaller subheading */
+    }
+
+    .description {
+        font-size: 14px; /* Smaller description text */
+        width: 95%; /* Almost full-width text area */
+    }
+
+    .team {
+        font-size: 14px; /* Smaller team text */
+    }
+
+    .logo1, .logo2 {
+        width: 100px; /* Even smaller logos */
+    }
+
+    .content {
+        padding: 15px; /* Less padding */
+    }
+}
+
+/* Large screens (optional) */
+@media (min-width: 1200px) {
+    .logo1, .logo2 {
+        width: 180px; /* Larger logos on big screens */
+    }
+
+    h1 {
+        font-size: 90px; /* Bigger heading for large screens */
+    }
+
+    .description {
+        font-size: 22px; /* Larger description text */
+    }
+}
