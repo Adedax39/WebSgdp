@@ -12,7 +12,7 @@
 .splash-container {
     width: 100vw;
     height: 100vh;
-    background: url('./underwater.png') no-repeat center center/cover; 
+    background: url('../../assets/images/splashscreen/underwater.png') no-repeat center center/cover; 
     display: flex;
     justify-content: center;
     align-items: center;
