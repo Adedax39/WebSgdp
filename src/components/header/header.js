@@ -1,4 +1,5 @@
 function toggleSideMenu() {
+    console.log("Opening menu...");
     document.getElementById('menu-overlay').classList.add('show');
 }
 
@@ -15,17 +16,17 @@ document.addEventListener("click", function (event) {
     }
 });
 
-window.addEventListener('resize', function () {
-    if (window.innerWidth > 768) {
-        closeSideMenu();
-    }
-})
+// window.addEventListener('resize', function () {
+//     if (window.innerWidth > 768) {
+//         closeSideMenu();
+//     }
+// })
 
 
 // Close the overlay when clicking outside of the overlay content
-document.getElementById('menu-overlay').addEventListener('click', function(event) {
-    // Check if the click was outside the overlay content
-    if (event.target === this) {
-        closeSideMenu();
-    }
-});
+// document.getElementById('menu-overlay').addEventListener('click', function(event) {
+//     // Check if the click was outside the overlay content
+//     if (event.target === this) {
+//         closeSideMenu();
+//     }
+// });

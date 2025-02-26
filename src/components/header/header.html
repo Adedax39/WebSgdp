@@ -1,76 +1,55 @@
 <link rel="stylesheet" href="src/components/header/header.css" />
 
 <header>
-    <!-- Top Bar -->
-    <div class="top-bar text-white text-left py-2 p">
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
         <div class="container">
-            <p class="mb-0">Sustainable Development Goals</p>
-        </div>
-    </div>
-
-    <!-- Main Header -->
-    <div class="header-main">
-        <div class="container py-2">
-            <div class="row align-items-center">
-                <!-- Logo -->
-                <div class="col-md-2 text-center">
-                    <img src="img/united_nations_logo.svg" alt="United Nations Logo" class="logo" />
-                </div>
-
-                <!-- Title -->
-                <div class="col-md-8 text-center mx-auto">
-                    <p class="fw-semibold">Department of Economic and Social Affairs</p>
-                    <p class="blue-text">17. Life Below Water</p>
-                </div>
-
-                <!-- Icons (Menu & User) -->
-                <div class="menu_user col-md-2 justify-content-between align-items-center">
-                    <a href="/src/pages/profile/profile.html" id="profile-link">
-                        <img src="/src/assets/images/profile/boy.png" alt="user-profile-image" class="rounded-circle user-icon" >
-                        <!-- <i class="bi bi-person-circle user-icon"></i> -->
-                    </a>
-                    <i class="bi bi-list menu-icon" id="menu-toggle" onclick="toggleSideMenu()"></i>
-                </div>
-
-
-                <!-- Mobile view -->
-                <hr id="mobile-hr" class="mx-auto center-align" />
-
+            <!-- Logo -->
+            <div class="logo">
+                <img src="/src/assets/images/header/life-below-water-high-resolution-logo (5).png"
+                    alt="United Nations Logo" id="logo" />
             </div>
-        </div>
 
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-sm navbar-dark nav-bar center-align mx-auto py-1">
-            <div class="container-fluid">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item me-4"><a class="nav-link" href="/src/pages/home/home.html" id="home-link">Home</a></li>
-                    <li class="nav-item me-4"><a class="nav-link" href="/src/pages/about/about.html" id="about-link">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/statistics/statistics.html" id="statistics-link">Statistics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/feedback/feedback.html" id="feedback-link">Feedback</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/ourteam/ourteam.html" id="ourteam-link">Our Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/sitemap/sitemap.html" id="sitemap-link">Sitemap</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/volunteer/volunteer.html" id="volunteer-link">Volunteer</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- Overlay Menu -->
-        <div id="menu-overlay" class="overlay">
-            <div class="overlay-content">
-                <div class="closeSideMenu d-flex justify-content-end">
-                    <i class="bi bi-x-square" id="side-menu-close" onclick="closeSideMenu()"></i>
-                </div>
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
                 <ul class="navbar-nav">
-                    <li class="nav-item me-4 my-3"><a class="nav-link" href="/src/pages/home/home.html">Home</a></li>
-                    <li class="nav-item me-4 my-3"><a class="nav-link" href="/src/pages/profile/profile.html">Profile</a></li>
-                    <li class="nav-item me-4"><a class="nav-link" href="/src/pages/about/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/statistics/statistics.html">Statistics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/src/pages/home/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/src/pages/about/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/src/pages/statistics/statistics.html">Statistics</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="/src/pages/feedback/feedback.html">Feedback</a></li>
                     <li class="nav-item"><a class="nav-link" href="/src/pages/ourteam/ourteam.html">Our Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="/src/pages/sitemap/sitemap.html">Sitemap</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/src/pages/volunteer/volunteer.html">Volunteer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/src/pages/volunteer/volunteer.html">Volunteer</a>
+                    </li>
                 </ul>
-            </div>
-        </div>
+            </nav>
 
+            <!-- Mobile Menu Icon -->
+            <i class="bi bi-list menu-icon" id="menu-toggle" onclick="toggleSideMenu()"></i>
+        </div>
+    </div>
+
+    <!-- Mobile Side Menu -->
+    <div id="menu-overlay" class="overlay">
+        <div class="overlay-content">
+            <!-- Close Button -->
+            <div class="closeSideMenu">
+                <i class="bi bi-x-square" id="side-menu-close" onclick="closeSideMenu()"></i>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/src/pages/home/home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/src/pages/profile/profile.html">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="/src/pages/about/about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/src/pages/statistics/statistics.html">Statistics</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/src/pages/feedback/feedback.html">Feedback</a></li>
+                <li class="nav-item"><a class="nav-link" href="/src/pages/ourteam/ourteam.html">Our Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="/src/pages/sitemap/sitemap.html">Sitemap</a></li>
+                <li class="nav-item"><a class="nav-link" href="/src/pages/volunteer/volunteer.html">Volunteer</a></li>
+            </ul>
+        </div>
+    </div>
 </header>

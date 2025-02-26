@@ -1,0 +1,103 @@
+/* Profile Section */
+.profile-section {
+  background-color: var(--light-blue); 
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/* Profile Content Layout */
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left Section (Text) */
+.profile-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.greeting {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--black);
+}
+
+.profile-name {
+  font-size: 3rem;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+
+.profile-description {
+  font-size: 1.2rem;
+  color: var(--gray);
+  margin-top: 10px;
+}
+
+/* Contact Button */
+.btn-contact {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: var(--dark-blue);
+}
+
+/* Right Section (Profile Image) */
+.profile-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-content {
+      flex-direction: column;
+      text-align: start;
+  }
+
+  .profile-info, .profile-image {
+      width: 100%;
+  }
+
+  .profile-name {
+      font-size: 2.5rem;
+  }
+
+  .btn-contact {
+      font-size: 14px;
+  }
+}
+
+
+
