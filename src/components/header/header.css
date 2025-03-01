@@ -2,7 +2,8 @@
 .nav-bar {
   background-color: var(--primary-blue);
   width: 100%;
-  padding: 15px 0;
+  position: fixed;
+  z-index: 999;
 }
 
 /* Center Content */
@@ -17,8 +18,9 @@
 
 /* Logo */
 #logo {
-  max-width: 150px;
+  max-width: 200px;
   height: auto;
+  padding: 5px 5px;
 }
 
 /* Desktop Navigation */
@@ -47,7 +49,13 @@
   transition: 0.3s;
 }
 
-.overlay {
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  padding-top: 5px;
+}
+
+.overlay, .menu-icon {
   display: none;
 }
 

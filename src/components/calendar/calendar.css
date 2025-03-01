@@ -1,0 +1,57 @@
+/* 🌟 Calendar Section */
+.calendar-section {
+    background-color: var(--light-blue);
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 📅 Layout */
+  .calendar-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* 📅 Calendar */
+  .calendar-wrapper {
+    flex: 1;
+    min-width: 300px;
+    background: var(--light-blue);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* 📆 Event List */
+  .event-list {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background: var(--primary-blue);
+    color: var(--white);
+    border-radius: 10px;
+  }
+  
+  /* 📌 Event Details */
+  .event-list h3 {
+    margin-bottom: 10px;
+  }
+  
+  #event-details {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #event-details li {
+    background: var(--dark-blue);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  

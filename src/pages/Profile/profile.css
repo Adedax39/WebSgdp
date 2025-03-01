@@ -1,15 +1,16 @@
 /* Profile Section */
 .profile-section {
-  background-color: var(--light-blue); 
+  background-color: var(--light-blue);
   padding: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 5rem;
 }
 
 .container {
   max-width: 1200px;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -42,7 +43,6 @@
 }
 
 .profile-description {
-  font-size: 1.2rem;
   color: var(--gray);
   margin-top: 10px;
 }
@@ -55,13 +55,18 @@
   background-color: var(--primary-blue);
   color: var(--white);
   text-decoration: none;
-  border-radius: 5px;
   margin-top: 20px;
   transition: background 0.3s ease;
 }
 
 .btn-contact:hover {
   background-color: var(--dark-blue);
+}
+
+.profile-question {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 2.5rem;
 }
 
 /* Right Section (Profile Image) */
@@ -76,28 +81,470 @@
 .profile-image img {
   width: 100%;
   max-width: 350px;
-  border-radius: 15px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .profile-content {
-      flex-direction: column;
-      text-align: start;
+    flex-direction: column;
+    text-align: center;
   }
 
-  .profile-info, .profile-image {
-      width: 100%;
+  .container {
+    max-width: 768px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .profile-info {
+    text-align: start;
+    flex: 1;
+    min-width: 150px !important;
+    padding: 20px;
+  }
+
+  .profile-info,
+  .profile-image {
+    width: 100%;
   }
 
   .profile-name {
-      font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .btn-contact {
-      font-size: 14px;
+    font-size: 14px;
+  }
+
+  .profile-image {
+    padding-bottom: 1rem;
+  }
+}
+
+/* Mobile screen changes */
+@media (max-width: 425px) {
+}
+
+/* Section 2 */
+/* About Section */
+.about-section {
+  background-color: var(--pearl-white);
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: beige; */
+}
+
+/* About & Skills Layout */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+/* Left Section: About */
+.about-info {
+  flex: 1;
+  padding: 20px;
+  margin-left: auto;
+  min-width: 450px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: var(--gray);
+}
+
+/* About List */
+.about-list {
+  list-style: none;
+  padding: 0;
+  min-width: 300px;
+  font-size: 16px;
+}
+
+.about-list li {
+  font-size: 16px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.list-icon {
+  color: var(--dark-yellow);
+  margin-right: 10px;
+}
+
+/* Right Section: Skills */
+.skills-info {
+  flex: 1;
+  min-width: 450px;
+  padding: 20px;
+  /* background-color: bisque; */
+}
+
+/* Skill Bars */
+.skill {
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.skill p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.progress-bar {
+  background-color: var(--dark-yellow);
+  border-radius: 5px;
+  height: 10px;
+  width: 100%;
+  position: relative;
+  overflow: visible;
+  z-index: 2;
+}
+
+.progress-fill {
+  background-color: var(--primary-blue);
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    max-width: 200px;
+  }
+
+  .about-info,
+  .skills-info {
+    width: 100%;
+    flex: 1;
+    min-width: 350px !important;
+    padding: 20px;
+  }
+
+  .section-title,
+  .section-description {
+    text-align: start;
+    /* padding-bottom: 1rem; */
+  }
+}
+
+/* Mobile
+@media (max-width: 425px) {
+
+} */
+
+/* Goals Section */
+.goals-section {
+  background-color: #e2f9fa;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid layout */
+.goals-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); Auto-fit for responsiveness */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-content: center; /* Centers grid items */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Ensures centering */
+}
+
+/* Card Layout */
+.goal-card {
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  max-width: 300px;
+  margin: 0 auto; /* Centers the cards within the grid */
+  border-radius: 20px;
+  overflow: hidden;
+  height: 300px;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.goal-image {
+  width: 90%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block; /* asdfsdf*/
+}
+
+/* Card Content */
+.goal-content {
+  position: absolute;
+  bottom: 10px; /* Adjust to overlap */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.goal-content h3 {
+  font-size: 18px;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.goal-content h5 {
+  font-size: 16px;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.goal-icon {
+  width: 40px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* Grid layout */
+  .goals-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .goal-card {
+    width: 100%; /* Adjust as needed */
+    max-width: 600px;
+  }
+
+  .goal-content {
+    width: 90%;
+    bottom: -15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .goals-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .goal-content {
+    bottom: 20px;
   }
 }
 
 
+/* Calendar Section */
+.content-heading h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  text-align: start;
+}
 
+.calendar-section {
+  background-color: var(--primary-blue);
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Layout */
+.calendar-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items on small screens */
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Calendar */
+.calendar-wrapper {
+  flex: 1;
+  min-width: 320px; /* Slightly larger for better touch usability */
+  max-width: 500px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Calendar Controls */
+.calendar-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-blue);
+  border-radius: 10px;
+  /* padding: 10px; */
+}
+
+.calendar-controls p {
+  color: var(--pearl-white);
+  padding-top: 0.5rem;
+}
+
+.calendar-controls button {
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
+  padding: 8px;
+  margin: 0 10px;
+  width: 80px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Week Row */
+.week-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.weekday-label {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+/* Date Button Styles */
+.calendar-date {
+  width: 98%;
+  padding: 5px;
+  text-align: center;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.calendar-date:hover {
+  background-color: #e0e0e0;
+}
+
+.calendar-date:active {
+  background-color: var(--dark-blue);
+}
+
+/* Event List */
+.event-list {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+  padding: 20px;
+  background: var(--primary-blue);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+/* Event Details */
+.event-list h3 {
+  margin-bottom: 10px;
+}
+
+#event-details {
+  list-style: none;
+  padding: 0;
+}
+
+#event-details li {
+  background: var(--dark-blue);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets (Max-width: 768px) */
+@media (max-width: 768px) {
+  .calendar-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .content-heading h4 {
+    font-size: 20px;
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(30px, 1fr)); /* Ensuring columns are readable */
+  }
+}
+
+/* Mobile Screens (Max-width: 575px) */
+@media (max-width: 575px) {
+  .calendar-content {
+    flex-direction: row !important;
+    align-items: center;
+  }
+
+  .calendar-wrapper {
+    width: 100%;
+    min-width: 320px;
+    min-height: 400px; /* Increased height to ensure visibility */
+    padding-bottom: 20px;
+  }
+
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    min-height: 250px; /* Give enough space for the dates to render */
+  }
+
+  .calendar-date {
+    font-size: 8px; /* Smaller font for mobile */
+    padding: 8px;
+  }
+
+  .content-heading h4 {
+    font-size: 16px;
+  }
+
+  .calendar-controls {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .calendar-controls p {
+    margin-bottom: 10px;
+  }
+
+}
