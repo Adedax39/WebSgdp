@@ -23,7 +23,7 @@ document.addEventListener("click", function (event) {
 // })
 
 
-// Close the overlay when clicking outside of the overlay content
+// //Close the overlay when clicking outside of the overlay content
 // document.getElementById('menu-overlay').addEventListener('click', function(event) {
 //     // Check if the click was outside the overlay content
 //     if (event.target === this) {
