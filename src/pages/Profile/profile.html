@@ -1,3 +1,232 @@
-<div class="profile-container">
-  <p>Profile content goes here</p>
-</div>
+<link rel="stylesheet" href="/src/pages/profile/profile.css" />
+
+<section class="profile-section">
+  <div class="container">
+    <div class="profile-content">
+      <!-- Left Section: Profile Info -->
+      <div class="profile-info">
+        <h3 class="greeting">Hi I'm</h3>
+        <h1 class="profile-name">John Smith</h1>
+        <p class="profile-description">
+          Utilize keywords in your profile to enhance visibility and attract the
+          right audience.
+        </p>
+        <a href="#contact-form-section" class="btn-contact">Get in Touch</a>
+
+        <h3 class="profile-question">Who am I?</h3>
+        <p class="profile-description">This is some text about me, where Im from, what I do. Feel free to go through by
+          and get to know me.</p>
+      </div>
+
+      <!-- Right Section: Profile Image -->
+      <div class="profile-image">
+        <img src="/src/assets/images/profile/user_profile.jpeg" alt="John Smith" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <!-- Left Section: About -->
+      <div class="about-info">
+        <h4 class="section-title">About</h4>
+        <p class="section-description">
+          Hi, welcome to my private space. Feel free to get to know me.
+        </p>
+
+        <ul class="about-list">
+          <li><span class="list-icon">✔</span> <strong>Age:</strong> &nbsp; 22</li>
+          <li><span class="list-icon">✔</span> <strong>Work:</strong> &nbsp; Student</li>
+          <li><span class="list-icon">✔</span> <strong>Family:</strong> &nbsp; Single</li>
+          <li><span class="list-icon">✔</span> <strong>Location:</strong> &nbsp; Colombo, Sri Lanka</li>
+        </ul>
+      </div>
+
+      <!-- Right Section: Skills -->
+      <div class="skills-info">
+        <h4 class="section-title">Skills</h4>
+
+        <div class="skill">
+          <p class="section-description">Communication</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <p class="section-description">Teamworking</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 70%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <p class="section-description">Presentation</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <p class="section-description">Computer Literacy</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="goals-section">
+  <div class="container">
+    <div class="goals-grid">
+      <!-- Card 1: Goals -->
+      <div class="goal-card">
+        <img src="/src/assets/images/profile/ocean-goals.png" alt="Goal Image" class="goal-image">
+        <div class="goal-content">
+          <h3>Goals</h3>
+          <h5>Mountain Bliss Experience</h5>
+          <img src="/src/assets/images/common/560449-aaf71d2d.png" alt="Icon" class="goal-icon">
+        </div>
+      </div>
+
+
+      <!-- Card 2: Interests -->
+      <div class="goal-card">
+        <img src="/src/assets/images/profile/ocean-frustration.jpg" alt="Goal Image" class="goal-image">
+        <div class="goal-content">
+          <h3>Frustrations</h3>
+          <h5>Winter Wonderland Retreat</h5>
+          <img src="/src/assets/images/common/560449-aaf71d2d.png" alt="Icon" class="goal-icon">
+        </div>
+      </div>
+
+      <!-- Card 3: Interests -->
+      <div class="goal-card">
+        <img src="/src/assets/images/profile/photo-1437622368342-7a3d73a34c8f.jpeg" alt="Goal Image" class="goal-image">
+        <div class="goal-content">
+          <h3>Experience</h3>
+          <h5>Winter Wonderland Retreat</h5>
+          <img src="/src/assets/images/common/560449-aaf71d2d.png" alt="Icon" class="goal-icon">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="calendar-section">
+  <div class="container">
+    <div class="calendar-content">
+
+      <!-- Calendar -->
+      <div class="calendar-wrapper">
+        <div class="content-heading">
+          <h3>Volunteering Availability</h3>
+        </div>
+        <!-- Calendar Controls -->
+        <div class="calendar-controls">
+          <button id="prev-month">◀ Prev</button>
+          <p id="month-year" class="month-year"></p>
+          <button id="next-month">Next ▶</button>
+        </div>
+
+        <div id="calendar"></div>
+      </div>
+
+      <!-- Event List -->
+      <div class="event-list">
+        <p>Selected Date: <span id="selected-date">None</span></p>
+        <ul id="event-details">
+          <li>No events yet</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="un-goals">
+  <div class="un-container">
+    <div class="un-goals-heading">
+      <h3>UN Goals I Support</h3>
+    </div><br>
+
+    <div class="un-goal-container">
+      <div class="un-goal-image">
+        <img src="/src/assets/images/profile/climate-action.png" alt="Climate Action">
+      </div>
+
+      <div class="un-goal-image">
+        <img src="/src/assets/images/profile/clean-water-and-sanitisation.png" alt="Clean Water and Sanitization">
+      </div>
+
+      <div class="un-goal-image">
+        <img src="/src/assets/images/profile/industry-innovation-and-infrastructure.png"
+          alt="Industry Innovation and Infrustructure">
+      </div>
+
+      <div class="un-goal-image">
+        <img src="/src/assets/images/profile/zero-hunger.png" alt="Zero Hunger">
+      </div>
+
+      <div class="un-goal-image">
+        <img src="/src/assets/images/profile/reducedInequalities.png" alt="Reduced Inequalities">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-form-section" id="contact-form-section">
+  <!-- <div class="container"> -->
+  <div class="contact-form">
+    <!-- Left: Contact Details -->
+    <div class="contact-form-details">
+      <h1>Be a Part of Our Community</h1>
+      <h3>Get in touch now</h3>
+
+      <div class="user-bio">
+        <h4>Committed to Protecting Marine Life</h4>
+        <p>I am passionate about preserving marine ecosystems and promoting sustainable practices to protect our oceans
+          for future generations</p>
+      </div>
+
+      <div class="user-bio">
+        <h4>Community Volunteer & Ocean Enthusiast</h4>
+        <p>I actively volunteer for environmental awareness programs, educating people about marine life conservation
+          and the importance of reducing plastic pollution</p>
+      </div>
+
+      <div class="user-bio">
+        <h4>Interest in Sustainability</h4>
+        <p>I believe in the power of technology and community efforts to drive sustainable ocean practices and minimize
+          human impact on marine ecosystems</p>
+      </div>
+    </div>
+
+    <!-- Right: Form Content -->
+    <div class="contact-form-content">
+      <form action="#">
+        <div class="input-group">
+          <label for="name">Enter your Name</label>
+          <input type="text" name="name" id="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Enter a valid email address</label>
+          <input type="email" name="email" id="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="input-group">
+          <label for="message">Enter your message</label>
+          <textarea name="message" id="message" rows="5" placeholder="Type your message here..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+  <!-- </div> -->
+</section>

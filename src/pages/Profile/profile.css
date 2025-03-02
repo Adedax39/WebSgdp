@@ -1,0 +1,803 @@
+/* Profile Section */
+.profile-section {
+  background-color: var(--light-blue);
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+/* Profile Content Layout */
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left Section (Text) */
+.profile-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.greeting {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--black);
+}
+
+.profile-name {
+  font-size: 3rem;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+
+.profile-description {
+  color: var(--gray);
+  margin-top: 10px;
+}
+
+/* Contact Button */
+.btn-contact {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: var(--dark-blue);
+}
+
+.profile-question {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 2.5rem;
+}
+
+/* Right Section (Profile Image) */
+.profile-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 768px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .profile-info {
+    text-align: start;
+    flex: 1;
+    min-width: 150px !important;
+    padding: 20px;
+  }
+
+  .profile-info,
+  .profile-image {
+    width: 100%;
+  }
+
+  .profile-name {
+    font-size: 3rem;
+  }
+
+  .btn-contact {
+    font-size: 14px;
+  }
+
+  .profile-image {
+    padding-bottom: 1rem;
+  }
+}
+
+/* Mobile screen changes */
+@media (max-width: 425px) {
+}
+
+/* Section 2 */
+/* About Section */
+.about-section {
+  background-color: var(--pearl-white);
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: beige; */
+}
+
+/* About & Skills Layout */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+/* Left Section: About */
+.about-info {
+  flex: 1;
+  padding: 20px;
+  margin-left: auto;
+  min-width: 450px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: var(--gray);
+}
+
+/* About List */
+.about-list {
+  list-style: none;
+  padding: 0;
+  min-width: 300px;
+  font-size: 16px;
+}
+
+.about-list li {
+  font-size: 16px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.list-icon {
+  color: var(--dark-yellow);
+  margin-right: 10px;
+}
+
+/* Right Section: Skills */
+.skills-info {
+  flex: 1;
+  min-width: 450px;
+  padding: 20px;
+  /* background-color: bisque; */
+}
+
+/* Skill Bars */
+.skill {
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.skill p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.progress-bar {
+  background-color: var(--dark-yellow);
+  border-radius: 5px;
+  height: 10px;
+  width: 100%;
+  position: relative;
+  overflow: visible;
+  z-index: 2;
+}
+
+.progress-fill {
+  background-color: var(--primary-blue);
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    max-width: 200px;
+  }
+
+  .about-info,
+  .skills-info {
+    width: 100%;
+    flex: 1;
+    min-width: 350px !important;
+    padding: 20px;
+  }
+
+  .section-title,
+  .section-description {
+    text-align: start;
+    /* padding-bottom: 1rem; */
+  }
+}
+
+/* Mobile
+@media (max-width: 425px) {
+
+} */
+
+/* Goals Section */
+.goals-section {
+  background-color: var(--pearl-white);
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid layout */
+.goals-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); Auto-fit for responsiveness */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-content: center; /* Centers grid items */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Ensures centering */
+}
+
+/* Card Layout */
+.goal-card {
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  max-width: 300px;
+  margin: 0 auto; /* Centers the cards within the grid */
+  border-radius: 20px;
+  overflow: hidden;
+  height: 300px;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.goal-image {
+  width: 90%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block; /* asdfsdf*/
+}
+
+/* Card Content */
+.goal-content {
+  position: absolute;
+  bottom: 10px; /* Adjust to overlap */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.goal-content h3 {
+  font-size: 18px;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.goal-content h5 {
+  font-size: 16px;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.goal-icon {
+  width: 40px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* Grid layout */
+  .goals-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .goal-card {
+    width: 100%; /* Adjust as needed */
+    max-width: 600px;
+  }
+
+  .goal-content {
+    width: 90%;
+    bottom: -15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .goals-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .goal-content {
+    bottom: 20px;
+  }
+}
+
+
+/* Calendar Section */
+.content-heading h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
+.calendar-section {
+  background-color: var(--primary-blue);
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Layout */
+.calendar-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items on small screens */
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Calendar */
+.calendar-wrapper {
+  flex: 1;
+  min-width: 320px; /* Slightly larger for better touch usability */
+  max-width: 500px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Calendar Controls */
+.calendar-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-blue);
+  border-radius: 10px;
+  /* padding: 10px; */
+}
+
+.calendar-controls p {
+  color: var(--pearl-white);
+  padding-top: 0.5rem;
+}
+
+.calendar-controls button {
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
+  padding: 8px;
+  margin: 0 10px;
+  width: 80px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Week Row */
+.week-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.weekday-label {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+/* Date Button Styles */
+.calendar-date {
+  width: 98%;
+  padding: 5px;
+  text-align: center;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.calendar-date:hover {
+  background-color: #e0e0e0;
+}
+
+.calendar-date:active {
+  background-color: var(--dark-blue);
+}
+
+/* Event List */
+.event-list {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+  padding: 20px;
+  background: var(--primary-blue);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+/* Event Details */
+.event-list h3 {
+  margin-bottom: 10px;
+}
+
+#event-details {
+  list-style: none;
+  padding: 0;
+}
+
+#event-details li {
+  background: var(--dark-blue);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets (Max-width: 768px) */
+@media (max-width: 768px) {
+  .calendar-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .content-heading h4 {
+    font-size: 20px;
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(7, minmax(30px, 1fr)); /* Ensuring columns are readable */
+  }
+}
+
+/* Mobile Screens (Max-width: 575px) */
+@media (max-width: 575px) {
+  .calendar-content {
+    flex-direction: row !important;
+    align-items: center;
+  }
+
+  .calendar-wrapper {
+    width: 100%;
+    min-width: 320px;
+    min-height: 400px; /* Increased height to ensure visibility */
+    padding-bottom: 20px;
+  }
+
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    min-height: 250px; /* Give enough space for the dates to render */
+  }
+
+  .calendar-date {
+    font-size: 8px; /* Smaller font for mobile */
+    padding: 8px;
+  }
+
+  .content-heading h4 {
+    font-size: 16px;
+  }
+
+  .calendar-controls {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .calendar-controls p {
+    margin-bottom: 10px;
+  }
+}
+
+
+/* Section 5 Un Goals I Support */
+.un-goals {
+  background-color: var(--pearl-white);
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Heading */
+
+.un-goals-heading h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--primary-blue);
+  text-align: center;
+}
+
+/* Container */
+.un-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.un-goal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; 
+  flex-wrap: wrap; 
+  max-width: 1600px; /* Limits the width */
+  margin: auto;
+}
+
+/* Goal Images */
+.un-goal-image {
+  flex: 1;
+  max-width: 180px; /* Keeps image sizes equal */
+  text-align: center;
+  padding: 5px;
+}
+
+.un-goal-image img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.un-goal-image img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .un-goal-container {
+    gap: 20px;
+  }
+
+  .un-goal-image {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .un-container {
+    width: 80%;
+    max-width: 480px;
+    margin: auto;
+  }
+
+  .un-goals-heading h3 {
+    text-align: center;
+  }
+
+  .un-goal-container {
+    flex-direction: column;   
+    align-items: center;
+    /* grid-template-columns: repeat(2, minmax(30px, 1fr)); */
+  }
+
+  .un-goal-image {
+    max-width: 180px;
+  }
+
+  /* Hover Effect */
+.un-goal-image img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  background-color: var(--gray);
+}
+
+/* Contact Form Container */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Contact Details (Left Side) */
+.contact-form-details {
+  flex: 1;
+  padding: 3rem;
+  background-color: var(--primary-blue);
+  color: var(--pearl-white);
+  /* border-radius: 10px; */
+  text-align: start;
+  min-width: 350px;
+}
+
+.contact-form-details h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-form-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-form-details .user-bio h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-details .user-bio p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Contact Form (Right Side) */
+.contact-form-content {
+  flex: 1;
+  background-color: var(--pearl-white);
+  padding: 3rem;
+  /* border-radius: 10px; */
+  min-width: 350px;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form-content label {
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form-content input,
+.contact-form-content textarea {
+  width: 100%;
+  padding: 12px;
+  border-bottom: 1px solid var(--gray);
+  /* border-radius: 5px; */
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--gray);
+  transition: border 0.3s ease-in-out;
+}
+
+.contact-form-content input:focus,
+.contact-form-content textarea:focus {
+  border-color: var(--dark-blue);
+}
+
+/* Submit Button */
+.form-submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--gray);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-submit-btn:hover {
+  background-color: var(--primary-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-details,
+  .contact-form-content {
+    width: 90%;
+    text-align: center;
+  }
+
+  .contact-form-details h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form-details h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact-form-content {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-details h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form-details h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-form-content input,
+  .contact-form-content textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .form-submit-btn {
+    font-size: 0.9rem;
+  }
+}

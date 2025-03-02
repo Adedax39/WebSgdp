@@ -1,329 +1,144 @@
-/*Mobile: */
-@media (max-width: 575px) {
-
-  .top-bar P {
-    padding: 2px 0;
-    font-size: 10px !important;
-  }
-
-  .fw-semibold {
-    font-size: var(--font-size-h2) !important;
-  }
-
-  .blue-text {
-    color: var(--dark-blue);
-    font-size: var(--font-size-h3) !important;
-    font-weight: 500;
-  }
-
-
-  .fw-semibold {
-    padding-top: 20px;
-    font-size: var(--font-size-h2) !important;
-  }
-
-  #mobile-hr {
-    display: block !important;
-    border: 1px solid #023047 !important;
-    margin-top: 2px;
-  }
-
-  .navbar {
-    display: none !important;
-    padding: 5px;
-    text-align: center;
-  }
-
-  .menu-icon {
-    font-size: 30px;
-    cursor: pointer;
-    color: #023047;
-    display: block !important;
-  }
-
-  .menu_user {
-    width: 100% !important; /* Ensure it takes full width */
-    display: flex;
-    justify-content: space-between !important; /* Spread items to left and right */
-    align-items: center; /* Align items vertically */
-  }
-
-  .user-icon,
-  .menu-icon {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .user-icon {
-    display: none;
-    width: 20px;
-    height: 20px;
-  }
-
-  .overlay {
-    width: 50% !important;
-  }
-
-  .overlay-content::before {
-    width: 50% !important;
-  }
-}
-
-/* Tablet:  */
-@media (max-width: 768px) {
-  .logo {
-    max-width: 160px !important;
-  }
-
-  #mobile-hr {
-    display: block !important;
-    border: 1px solid #023047 !important;
-    margin-top: 2px;
-  }
-
-  /*Navigation bar */
-  .menu_user {
-    width: 100% !important; /* Ensure it takes full width */
-    display: flex;
-    justify-content: space-between !important; /* Spread items to left and right */
-    align-items: center; /* Align items vertically */
-  }
-
-  #menu-toggle {
-    cursor: pointer;
-    color: #023047;
-    display: block !important;
-    align-items: end !important;
-    margin-right: auto;
-  }
-
-  .user-icon {
-    display: none;
-  }
-
-  .user-icon,
-  .menu-icon {
-    margin: 0 !important;
-    padding: 0 !important;
-    font-size: 20px !important;
-  }
-
-  .navbar {
-    display: none !important;
-  }
-
-  .overlay {
-    width: 25%;
-  }
-
-  .overlay-content::before {
-    width: 25%;
-  }
-}
-
-/* Laptop -1024 */
-@media (max-width: 1440px) {
-  .logo {
-    max-width: 140px !important;
-  }
-
-  .fw-semibold {
-    font-size: var(--font-size-h2) !important;
-  }
-
-  .blue-text {
-    color: var(--dark-blue);
-    font-size: var(--font-size-h3) !important;
-    font-weight: 500;
-  }
-
-  /* Navigation Bar */
-  .nav-bar {
-    max-width: 100% !important;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 12px !important;
-  }
-
-  .user-icon {
-    width: 30px !important;
-    height: 30px !important;
-  }
-}
-
-/* Top Bar */
-.top-bar {
+/* Navigation Bar */
+.nav-bar {
   background-color: var(--primary-blue);
+  width: 100%;
+  position: fixed;
+  z-index: 999;
 }
 
-.top-bar P {
-  font-size: 12px;
-}
-
-/* Header Main */
-.header-main {
-  background-color: white;
+/* Center Content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 /* Logo */
-.logo {
-  max-width: 250px;
+#logo {
+  max-width: 200px;
+  height: auto;
+  padding: 5px 5px;
 }
 
-.menu_user {
+/* Desktop Navigation */
+.desktop-nav {
   display: flex;
-  margin-top: -30px !important;
+  justify-content: flex-end;
 }
 
-/*User Icon */
-.user-icon {
-  width: 40px;
-  height: 40px;
-  color: var(--primary-blue);
-  cursor: pointer;
-  margin-left: auto; /* Pushes the icon to the right */
-}
-
-/* Title Section */
-.fw-semibold {
-  font-size: var(--font-size-h1);
-  font-weight: 600;
-}
-
-.blue-text {
-  color: var(--dark-blue);
-  font-size: var(--font-size-h2);
-  font-weight: 500;
-}
-
-/* Hide the <hr> by default */
-#mobile-hr,
-#menu-toggle,
-#side-menu-close {
-  display: none;
-}
-
-/* Navigation Bar */
-.nav-bar {
-  background-color: var(--dark-blue);
-  /* border-radius: 30px 30px 0 0; */
-  max-width: 100%;
+.desktop-nav .navbar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  margin-top: 5px;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
+/* Navigation Links */
 .navbar-nav .nav-link {
+  text-decoration: none;
   color: white;
   font-weight: 500;
   font-size: 16px;
-  padding: 10px;
+  padding: 10px 15px;
   transition: 0.3s;
-}
-
-.navbar-nav .nav-link.active {
-  color: var(--dark-yellow);
-  font-weight: bold;
-}
-
-.navbar-nav {
-  gap: 10px;
 }
 
 .navbar-nav .nav-link:hover {
   text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  padding-top: 5px;
 }
 
-.overlay-content .closeSideMenu {
-  width: 100%;
-  margin-bottom: 10px;
-  font-size: 10px !important;
-}
-
-#side-menu-close {
-  display: block !important;
-  cursor: pointer;
-  color: white; /* Change icon color to white */
-  font-size: 18px; /* Increase the icon size */
-  z-index: 2; /* Placing the icon above the hue*/
-  align-items: end !important;
-}
-
-/* Overlay Menu */
-.overlay {
+.overlay, .menu-icon {
   display: none;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin-top: 33px;
-  width: 50%;
-  height: 100%;
-  z-index: 999;
-  transition: 0.3s ease-in-out;
-  overflow-y: auto; /* enables scroling */
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.overlay-content {
-  position: relative;
-  z-index: 2; /* content is above the dim effect*/
-  width: 100%;
-  top: 5;
-  height: 100%;
-  padding: 20px 10px;
-  background-image: url(/img/side-menu-sea.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: block;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: auto;
-  padding-bottom: 10rem;
-}
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none; /* Hide desktop menu */
+  }
 
-/* Add a dark hue (overlay) */
-.overlay-content::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin-top: 2.2rem;
-  width: 50%;
-  height: 100% !important;
-  background: rgba(0, 0, 0, 0.5); /* Adjust opacity for dim effect */
-  z-index: 0; /* Dim effect is below the content -overlay */
-  overflow-y: auto;
-}
+  /* Show Hamburger Icon */
+  .menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: block;
+  }
 
-/* Make sure text is above the hue effect */
-.overlay-content .navbar-nav {
-  position: relative;
-  z-index: 2;
-}
+  /* Overlay Menu */
+  .overlay {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hidden */
+    width: 50%;
+    height: 100%;
+    /* background: url('/src/assets/images/header/side-menu-sea.jpg') no-repeat center center/cover; */
+    background-image: url(/src/assets/images/header/coral_reef.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: var(--dark-blue); */
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+  }
 
-.overlay-content .nav-item {
-  margin: 10px 0;
-  display: block;
-  width: 100%;
-}
+  .overlay.show {
+    right: 0; /* Slide in from right */
+    display: flex;
+  }
 
-.overlay-content .nav-link {
-  color: var(--white);
-  font-size: 16px !important;
-  display: block;
-  /* transition: background 0.3s ease-in-out; */
-}
+  /* Overlay Content */
+  .overlay-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
 
-/* Hover Effect */
-.overlay-content .nav-link:hover {
-  background-color: var(--primary-blue); /* Light transparent background */
-  /* border: 1px solid var(--dark-yellow);  */
-  color: var(--white);
-}
+  /* Close Button */
+  .closeSideMenu {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
 
-/* Show the overlay */
-.overlay.show {
-  display: flex !important;
+  /* Mobile Menu */
+  .overlay-content .navbar-nav {
+    list-style: none;
+    padding: 0;
+  }
+
+  .overlay-content .nav-item {
+    margin: 15px 0;
+  }
+
+  .overlay-content .nav-link {
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .overlay-content .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
 }

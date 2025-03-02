@@ -18,6 +18,7 @@
   --dark-blue: #0077b6; /* Deep Sea */
   --light-blue: #90e0ef; /* Soft Water Blue */
   --white: #ffffff; /* Soft White */
+  --pearl-white: #F8F9FA;
   --gray: #6c757d; /* Secondary Text */
   --black: #0a0a0a; /* Main Text */
   --yellow: #ffb703; /* Call-to-Action */
@@ -27,13 +28,13 @@
   --font-secondary: "Inter", sans-serif;
   --font-tertiary: "Nunito", sans-serif;
 
-  --font-size-body: 15px;
+  --font-size-body: 16px;
   --line-height-body: 1.8;
   --letter-spacing: 0.5px;
 
-  --font-size-h1: 20px;
-  --font-size-h2: 18px;
-  --font-size-h3: 16px;
+  --font-size-h1: 48px;
+  --font-size-h2: 36px;
+  --font-size-h3: 18px;
   --font-size-h4: 14px;
   --font-size-h5: 12px;
   --font-size-h6: 10px;
@@ -53,6 +54,7 @@ body {
   font-family: var(--font-primary);
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .container {
