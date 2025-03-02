@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F9FA;
+  margin: 0;
+  padding: 20px;
+}
+.volunteer-section, .reviews-section, .feedback-section {
+  margin-bottom: 40px;
+}
+.volunteer-section {
+  text-align: left;
+  padding: 20px;
+}
+.dropdown {
+  float: right;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth; /* Enables smooth sliding */
+  scrollbar-width: none; /* Hides scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for Chrome, Safari */
+}
+.card {
+  flex: 0 0 auto;
+  background: white;
+  color: #023047;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding-bottom: 15px;
+  text-align: left;
+  border: 3px solid #0077B6;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.card-header {
+  background: #0077B6;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-content {
+  padding: 10px;
+}
+.btn {
+  background: #FFB703;
+  color: #023047;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: bold;
+  display: block;
+  width: 80%;
+  margin: 10px auto 0;
+}
+.btn:hover {
+  background: #023047;
+  color: white;
+  transform: scale(1.05);
+}
+.reviews-section, .feedback-section {
+  background: #90E0EF;
+  padding: 20px;
+  border-radius: 8px;
+}
+.review-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+.secondary {
+  background: grey;
+}

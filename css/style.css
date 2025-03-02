@@ -10,6 +10,8 @@
 /* ============================= */
 /* 🌍 1. Global Styles & Reset   */
 /* ============================= */
+
+@import "../src/pages/volunteer/volunteer.css";
 :root {
   --primary-blue: #023047; /* Ocean Blue */
   --secondary-blue: #8ecae6; /* Lighter Aqua */
@@ -45,7 +47,7 @@ html {
   scroll-behavior: smooth;
   font-family: var(--font-primary);
   font-size: var(--font-size-body);
-  line-height: 1.4;  
+  line-height: 1.4;
 }
 body {
   font-family: var(--font-primary);
