@@ -39,6 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
             loadScript("/js/calendar.js", () => initializeCalendar());
             loadScript("/js/profile.js", () => contactFormScroll());
           }, 100);
+        } else if (page === "sitemap") {
+          setTimeout( () => {
+            loadScript("/js/sitemap.js", () => cat());
+          }, 100);       
         }
       });      
     });

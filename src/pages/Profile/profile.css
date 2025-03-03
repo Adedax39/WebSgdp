@@ -1,168 +1,212 @@
 /* Profile Section */
 .profile-section {
   background-color: var(--light-blue);
-  padding: 50px 0;
+  padding-top: 100px;
+  padding-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5rem;
 }
 
+/* Container */
 .container {
   max-width: 1200px;
   width: 100%;
   margin: auto;
+  padding: 0 20px;
 }
 
 /* Profile Content Layout */
 .profile-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; /* Align text to start and image to end */
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 3rem; /* Spacing between text and image */
 }
 
 /* Left Section (Text) */
 .profile-info {
   flex: 1;
-  min-width: 300px;
-  padding: 20px;
+  min-width: 400px;
+  text-align: left;
 }
 
 .greeting {
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: var(--black);
 }
 
 .profile-name {
   font-size: 3rem;
-  font-family: Georgia, serif;
+  font-family: 'Georgia', serif;
   font-weight: 700;
   color: var(--primary-blue);
+  margin-bottom: 10px;
 }
 
 .profile-description {
   color: var(--gray);
-  margin-top: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 /* Contact Button */
 .btn-contact {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 14px 28px;
   font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
   background-color: var(--primary-blue);
   color: var(--white);
   text-decoration: none;
-  margin-top: 20px;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn-contact:hover {
   background-color: var(--dark-blue);
-}
-
-.profile-question {
-  font-size: 2rem;
-  font-weight: 400;
-  margin-top: 2.5rem;
+  transform: translateY(-3px);
 }
 
 /* Right Section (Profile Image) */
 .profile-image {
   flex: 1;
-  min-width: 300px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; 
   align-items: center;
 }
 
 .profile-image img {
   width: 100%;
-  max-width: 350px;
+  max-width: 350px; 
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
-/* Responsive Design */
+
+/* Responsive Design for Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .profile-content {
+    padding-top: 80px;
+    padding-bottom: 0;
     flex-direction: column;
     text-align: center;
-  }
+   }
 
   .container {
-    max-width: 768px;
-    width: 100%;
-    margin: auto;
+    max-width: 100%;
+    padding: 0 20px; /* Add padding to prevent content from touching screen edges */
   }
 
   .profile-info {
-    text-align: start;
-    flex: 1;
-    min-width: 150px !important;
+    text-align: justify;
+    width: 100%;
+    min-width: unset; /* Allow flexibility */
     padding: 20px;
   }
 
-  .profile-info,
+  .profile-name {
+    font-size: 2.5rem; /* Reduce size for better readability */
+  }
+
+  .profile-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .btn-contact {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
   .profile-image {
-    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+  }
+
+  .profile-image img {
+    max-width: 300px; /* Reduce image size on smaller screens */
+    border-radius: 10px;
+  }
+}
+
+/* Mobile Screen */
+@media (max-width: 425px) {
+  .profile-section {
+    padding: 20px 0;
+  }
+
+  .profile-content {
+    gap: 1.5rem;
+    align-items: flex-start; /* Ensures everything is left-aligned */
+    text-align: left; /* Aligns text to the left */
+  }
+
+  .profile-info {
+    text-align: left; /* Make sure text is left-aligned */
   }
 
   .profile-name {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  .profile-description {
+    font-size: 0.95rem;
   }
 
   .btn-contact {
     font-size: 14px;
+    padding: 10px 20px;
   }
 
   .profile-image {
-    padding-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start; /* Ensures image container aligns left */
+    width: 100%;
+  }
+
+  .profile-image img {
+    max-width: 320px;
+    display: block; /* Ensures it follows flexbox properly */
+    margin: 0 20px;
   }
 }
 
-/* Mobile screen changes */
-@media (max-width: 425px) {
-}
+
 
 /* Section 2 */
 /* About Section */
 .about-section {
-  background-color: var(--pearl-white);
-  padding: 50px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: beige; */
+  background-color: var(--pearl-white);  
 }
 
 /* About & Skills Layout */
 .about-content {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 100px;
+  align-items: center;  
+  width: 100%;
+  max-width: 1200px;
+  padding: 5rem 0;
 }
 
 /* Left Section: About */
 .about-info {
   flex: 1;
-  padding: 20px;
-  margin-left: auto;
-  min-width: 450px;
+  max-width: 500px;
 }
 
 .section-title {
-  font-size: 24px;
   font-weight: bold;
   color: var(--primary-blue);
-  margin-bottom: 15px;
-}
-
-.section-description {
-  font-size: 16px;
-  color: var(--gray);
+  padding: 1rem 0;
 }
 
 /* About List */
@@ -170,11 +214,11 @@
   list-style: none;
   padding: 0;
   min-width: 300px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .about-list li {
-  font-size: 16px;
+  font-size: 1rem;
   margin: 8px 0;
   display: flex;
   align-items: center;
@@ -188,19 +232,17 @@
 /* Right Section: Skills */
 .skills-info {
   flex: 1;
-  min-width: 450px;
-  padding: 20px;
+  max-width: 500px;
   /* background-color: bisque; */
 }
 
 /* Skill Bars */
 .skill {
-  margin-bottom: 20px;
   flex: 1;
+  margin-bottom: 1.3rem;
 }
 
 .skill p {
-  font-size: 16px;
   font-weight: 500;
 }
 
@@ -212,6 +254,7 @@
   position: relative;
   overflow: visible;
   z-index: 2;
+  margin-top: -0.5rem;
 }
 
 .progress-fill {
@@ -226,8 +269,26 @@
   .about-content {
     flex-direction: column;
     text-align: center;
-    max-width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
   }
+
+  /* About & Skills Layout */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Left Section: About */
+.about-info {
+  flex: 1;
+  max-width: 500px;
+}
 
   .about-info,
   .skills-info {
@@ -238,24 +299,20 @@
   }
 
   .section-title,
-  .section-description {
+  .skill-description {
     text-align: start;
-    /* padding-bottom: 1rem; */
   }
 }
 
-/* Mobile
-@media (max-width: 425px) {
-
-} */
 
 /* Goals Section */
 .goals-section {
   background-color: var(--pearl-white);
-  padding: 40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 5rem 0;
 }
 
 /* Grid layout */
@@ -314,8 +371,8 @@
   margin-bottom: 10px;
 }
 
-.goal-content h5 {
-  font-size: 16px;
+.goal-content p {
+  font-size: 13px;
   color: var(--gray);
   font-weight: 500;
 }
@@ -334,7 +391,7 @@
 
   .goal-card {
     width: 100%; /* Adjust as needed */
-    max-width: 600px;
+    max-width: 300px;
   }
 
   .goal-content {
@@ -343,7 +400,7 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 425px) {
   .goals-grid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -356,8 +413,8 @@
 
 /* Calendar Section */
 .content-heading h3 {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 400px;
   color: var(--primary-blue);
   margin-bottom: 1rem;
   text-align: start;
@@ -369,6 +426,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5rem 0;
 }
 
 /* Layout */
@@ -405,19 +463,20 @@
 
 .calendar-controls p {
   color: var(--pearl-white);
-  padding-top: 0.5rem;
+  padding-top: 1rem;
+  font-size: 1.3rem;
 }
 
 .calendar-controls button {
   background-color: var(--white);
   color: var(--black);
   border: none;
-  padding: 8px;
-  margin: 0 10px;
-  width: 80px;
+  padding: 0.5rem;
+  margin: 0 0.8rem;
+  width: 5rem;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
 }
 
@@ -509,7 +568,7 @@
 }
 
 /* Mobile Screens (Max-width: 575px) */
-@media (max-width: 575px) {
+@media (max-width: 425px) {
   .calendar-content {
     flex-direction: row !important;
     align-items: center;
@@ -563,8 +622,8 @@
 /* Heading */
 
 .un-goals-heading h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 400px;
   color: var(--primary-blue);
   text-align: center;
 }
@@ -618,7 +677,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .un-container {
     width: 80%;
     max-width: 480px;
@@ -782,7 +841,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .contact-form-details h1 {
     font-size: 1.5rem;
   }
