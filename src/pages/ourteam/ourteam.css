@@ -1,0 +1,206 @@
+/* Overview Section */
+.ourteam-section {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 60px 0px;
+}
+
+/* Container for content */
+.ourteam-content {
+  width: 90%;
+  max-width: 1200px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.ourteam-content h2 {
+  color: var(--primary-blue);
+  font-size: var(--font-size-h2);
+  margin-top: 5rem;
+}
+
+.ourteam-content h3 {
+  color: var(--primary-blue);
+  font-size: var(--font-size-h3);
+}
+
+/* Team Cards Styles */
+.team-cards {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  margin-right: 5rem;
+}
+
+.flip-card:last-child {
+  margin-right: 0;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid var(--primary-blue);
+  border-radius: 1rem;
+}
+
+.flip-card-back {
+  background: linear-gradient(
+    120deg,
+    rgb(142, 202, 230) 10%,
+    rgb(33, 158, 188) 45%,
+    rgb(2, 48, 71) 90%
+  );
+  color: white;
+  transform: rotateY(180deg);
+  padding: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 574px) {
+  .team-cards {
+    flex-direction: column;
+  }
+
+  .flip-card {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .statement-content {
+    flex-direction: column;
+  }
+
+  .statement-content .vission-statement {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .mission-statement {
+    margin-top: -3rem;
+  }
+
+  .question-content .answer-content {
+    padding-right: 0;
+  }
+
+  .question-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .answer-content {
+    width: 100%;
+  }
+
+  .question-img-content {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center; /* Center the image */
+  }
+}
+
+/* statement styles */
+.statement-content {
+  display: flex;
+  align-items: stretch;
+  text-align: justify;
+  width: 100%;
+}
+
+.vission-statement {
+  width: 100%;
+  max-width: 600px;
+  padding-right: 5rem;
+}
+
+.mission-statement {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Why we do what we do section */
+.question-content {
+  display: flex;
+  align-items: stretch;
+  text-align: justify;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.answer-content {
+  width: 100%;
+  max-width: 600px;
+  padding-right: 6rem;
+}
+
+.question-img-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+
+.question-img-content img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#join-our-team {
+  margin-top: 2rem;
+}
+
+.contact-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2rem;
+}

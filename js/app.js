@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "about": "/src/pages/about/about.html",
     "statistics": "/src/pages/statistics/statistics.html",
     "feedback": "/src/pages/feedback/feedback.html",
-    "team": "/src/pages/team/team.html",
+    "ourteam": "/src/pages/ourteam/ourteam.html",
     "sitemap": "/src/pages/sitemap/sitemap.html",
     "volunteer": "/src/pages/volunteer/volunteer.html",
     "profile": "/src/pages/profile/profile.html"

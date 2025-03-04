@@ -46,7 +46,7 @@
   font-weight: 500;
   font-size: 16px;
   padding: 10px 15px;
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
 
 .navbar-nav .nav-link:hover {
@@ -88,7 +88,7 @@
     background-position: center;
     background-size: cover;
     /* background-color: var(--dark-blue); */
-    transition: right 0.3s ease-in-out;
+    /* transition: right 0.3s ease-in-out; */
     z-index: 999;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
@@ -135,7 +135,7 @@
     font-size: 18px;
     display: block;
     padding: 10px;
-    transition: background 0.3s ease-in-out;
+    /* transition: background 0.3s ease-in-out; */
   }
 
   .overlay-content .nav-link:hover {
