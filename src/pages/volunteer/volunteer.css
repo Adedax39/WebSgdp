@@ -41,12 +41,13 @@ body {
   gap: 20px;
   overflow-x: auto;
   padding-bottom: 10px;
-  scrollbar-width: none;
+  max-width: 80%;
+  /*scrollbar-width: none;*/
   scroll-snap-type: x mandatory;
 }
 
 .scroll-container::-webkit-scrollbar {
-  height: 0px;
+  /*height: 0px;*/
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
