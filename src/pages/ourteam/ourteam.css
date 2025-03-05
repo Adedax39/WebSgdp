@@ -1,11 +1,10 @@
 /* Overview Section */
 .ourteam-section {
-  padding-top: 5rem;
+  padding-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 60px 0px;
 }
 
 /* Container for content */
