@@ -77,13 +77,13 @@
 .profile-image {
   flex: 1;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: center;
 }
 
 .profile-image img {
   width: 100%;
-  max-width: 350px; 
+  max-width: 350px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   object-fit: cover;
@@ -184,14 +184,15 @@
 /* Section 2 */
 /* About Section */
 .about-section {
-  background-color: var(--pearl-white);  
+  margin-top: 1200px;
+  background-color: var(--pearl-white);
 }
 
 /* About & Skills Layout */
 .about-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   width: 100%;
   max-width: 1200px;
   padding: 5rem 0;
@@ -279,7 +280,7 @@
 .about-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   width: 100%;
   max-width: 1200px;
 }
@@ -639,8 +640,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px; 
-  flex-wrap: wrap; 
+  gap: 100px;
+  flex-wrap: wrap;
   max-width: 1600px; /* Limits the width */
   margin: auto;
 }
@@ -689,7 +690,7 @@
   }
 
   .un-goal-container {
-    flex-direction: column;   
+    flex-direction: column;
     align-items: center;
     /* grid-template-columns: repeat(2, minmax(30px, 1fr)); */
   }

@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/pilated-free');
-     
+
 
 .home-section {
     padding-top: 5rem;
@@ -11,6 +11,7 @@
     background-position: center;
     background-size: cover;
     top: 0;
+    margin-top: 900px
 }
 
 .home-overlay {
@@ -30,10 +31,10 @@
 .home-overlay h1 {
     color: antiquewhite;
     font-size: 6rem;
-    z-index: 1; 
-    font-family: 'Pilated Free', sans-serif; 
-    font-weight: 400; 
-    margin-top: 8rem;                                      
+    z-index: 1;
+    font-family: 'Pilated Free', sans-serif;
+    font-weight: 400;
+    margin-top: 8rem;
 }
 
 .home-overlay p {
@@ -42,7 +43,7 @@
     max-width: 800px;
     font-family: var(--font-tertiary);
     font-size: 1.3rem;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -87,13 +88,13 @@
     align-items: center;
     width: 100%;
     background-color: var(--pearl-white);
-    padding: 60px 20px; 
+    padding: 60px 20px;
 }
 
 /* Container for content */
 .overview-content {
     width: 90%;
-    max-width: 1200px; 
+    max-width: 1200px;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -125,14 +126,14 @@
 
 .our-mission-content {
     width: 90%;
-    max-width: 1200px; 
+    max-width: 1200px;
     text-align: justify;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
 }
 
-.our-mission-content h2{ 
+.our-mission-content h2{
     color: var(--primary-blue);
     font-size: var(--font-size-h2);
 }
@@ -150,13 +151,13 @@
 
 .card-content {
     width: 90%;
-    max-width: 1200px; 
+    max-width: 1200px;
     text-align: justify;
     display: flex;
     flex-direction: row;
     align-items: center;
     /* align-items: center; */
-    
+
 }
 
 .card {
@@ -172,17 +173,17 @@
   .card:hover {
     transform: translateY(-5px);
   }
-  
+
   .card a {
     text-decoration: none;
     font-size: 13px;
     font-family: var(--font-primary);
   }
-  
+
   .content {
     padding: 1.1rem;
   }
-  
+
   .image {
     object-fit: cover;
     width: 100%;
@@ -190,21 +191,21 @@
     background-color: rgb(239, 205, 255);
     border-radius: 5px;
   }
-  
+
   .title {
     color: var(--pearl-white);
     font-size: 1.125rem;
     line-height: 1.75rem;
     font-weight: 600;
   }
-  
+
   .desc {
     margin-top: 0.5rem;
     color: var(--pearl-white);
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
-  
+
   .action {
     display: inline-flex;
     margin-top: 1rem;
@@ -218,11 +219,11 @@
     padding: 4px 8px;
     border-radius: 4px;
   }
-  
+
   .action span {
     transition: .3s ease;
   }
-  
+
   .action:hover span {
     transform: translateX(4px);
   }

@@ -53,9 +53,9 @@ html {
 }
 body {
   font-family: var(--font-primary);
-  margin: 0;
   padding: 0;
   list-style: none;
+  margin-top: 450px;
 }
 
 .container {

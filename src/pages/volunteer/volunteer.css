@@ -13,10 +13,10 @@ body {
 /* Volunteer Section */
 .volunteer-section {
   max-width: 1200px;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 800px;
 }
 
 /* Header with Dropdown */
