@@ -19,7 +19,7 @@ body {
   align-items: center;
 }
 
-/* Header with Dropdown */
+ /*Header with Dropdown*/
 .header {
   display: flex;
   justify-content: space-between;

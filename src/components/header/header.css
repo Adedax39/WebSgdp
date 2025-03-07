@@ -1,145 +1,143 @@
-/* Navigation Bar */
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar (Top) */
 .nav-bar {
   background-color: var(--primary-blue);
   width: 100%;
-  position: fixed;
-  z-index: 999;
-}
-
-/* Center Content */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
 }
 
-/* Logo */
-#logo {
-  max-width: 200px;
-  height: auto;
-  padding: 5px 5px;
-}
-
-/* Desktop Navigation */
-.desktop-nav {
+/* Container for Logo and Navigation */
+.container {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
 }
 
+/* Logo Styling */
+.logo img {
+  height: 50px;
+}
+
+/* Desktop Navigation (Menu) */
 .desktop-nav .navbar-nav {
   list-style: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
+  gap: 15px;
   margin: 0;
   padding: 0;
 }
 
-/* Navigation Links */
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-nav .nav-link {
   text-decoration: none;
-  color: white;
-  font-weight: 500;
+  color: #ffffff;
   font-size: 16px;
   padding: 10px 15px;
-  /* transition: 0.3s; */
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .navbar-nav .nav-link:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--yellow);
-  padding-top: 5px;
+  color: var(--yellow);
 }
 
-.overlay, .menu-icon {
-  display: none;
-}
-
-/* Mobile Navigation */
+/* Mobile Navigation Drawer */
 @media (max-width: 768px) {
+  /* Hide desktop navigation on mobile */
   .desktop-nav {
-    display: none; /* Hide desktop menu */
+    display: none;
   }
 
-  /* Show Hamburger Icon */
+  /* Menu icon for mobile view */
   .menu-icon {
     font-size: 30px;
     cursor: pointer;
     color: white;
     display: block;
+    padding-right: 10%;
   }
 
-  /* Overlay Menu */
+  /* Overlay (Slide-in Drawer) */
   .overlay {
-    display: none;
-    flex-direction: column;
     position: fixed;
     top: 0;
-    right: -100%; /* Initially hidden */
-    width: 50%;
-    height: 100%;
-    /* background: url('/src/assets/images/header/side-menu-sea.jpg') no-repeat center center/cover; */
-    background-image: url(/src/assets/images/header/coral_reef.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    right: -100%; /* Initially off-screen */
+    width: 100%; /* Take full width */
+    height: 100%; /* Take full height */
+    background: rgba(0, 0, 0, 0.9);
+    background-image: url('/src/assets/images/header/coral_reef.jpg');
     background-size: cover;
-    /* background-color: var(--dark-blue); */
-    /* transition: right 0.3s ease-in-out; */
-    z-index: 999;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    overflow-y: auto;
+    background-position: center;
+    transition: right 0.4s ease-in-out;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center align items */
   }
 
   .overlay.show {
-    right: 0; /* Slide in from right */
-    display: flex;
+    right: 0; /* Slide in effect */
   }
 
-  /* Overlay Content */
+  /* Overlay content */
   .overlay-content {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(var(--primary-blue-rgb), 0.4);
+    gap: 15px;
   }
 
-  /* Close Button */
+  .overlay .nav-link {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    transition: color 0.3s;
+  }
+
+  .overlay .nav-link:hover {
+    color: var(--yellow);
+  }
+
+  /* Close Button for Mobile Drawer */
   .closeSideMenu {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 20px;
+    right: 25px;
     font-size: 24px;
     cursor: pointer;
     color: white;
   }
+}
 
-  /* Mobile Menu */
-  .overlay-content .navbar-nav {
-    list-style: none;
-    padding: 0;
-  }
-
-  .overlay-content .nav-item {
-    margin: 15px 0;
-  }
-
-  .overlay-content .nav-link {
-    color: white;
-    font-size: 18px;
-    display: block;
-    padding: 10px;
-    /* transition: background 0.3s ease-in-out; */
-  }
-
-  .overlay-content .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
+/* Desktop View (Above 768px) */
+@media (min-width: 768px) {
+  /* Hide the menu icon on desktop */
+  .menu-icon {
+    display: none;
   }
 }

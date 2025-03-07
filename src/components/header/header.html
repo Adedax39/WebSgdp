@@ -1,57 +1,60 @@
-<link rel="stylesheet" href="src/components/header/header.css" />
+<head>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/src/components/header/header.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
 
+<body>
 <header>
-    <!-- Navigation Bar -->
-    <div class="nav-bar">
-        <div class="container">
-            <!-- Logo -->
-            <div class="logo">
-                <img src="/src/assets/images/header/life-below-water-high-resolution-logo (5).png"
-                    alt="United Nations Logo" id="logo" />
-            </div>
+  <!-- Navigation Bar -->
+  <div class="nav-bar">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="/src/assets/images/header/life-below-water-high-resolution-logo (5).png" alt="United Nations Logo" id="logo" />
+      </div>
 
-            <!-- Desktop Navigation -->
-            <nav class="desktop-nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" data-page="home" href="#">Home</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" data-page="about" href="#">About</a></li> -->
-                    <li class="nav-item"><a class="nav-link" data-page="statistics" href="#">Statistics</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" data-page="feedback" href="#">Feedback</a></li>
-                    <li class="nav-item"><a class="nav-link" data-page="ourteam" href="#">Our Team</a></li>
-                    <li class="nav-item"><a class="nav-link" data-page="sitemap" href="#">Sitemap</a></li>
-                    <li class="nav-item"><a class="nav-link" data-page="volunteer" href="#">Volunteer</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" id="profile-link" data-page="profile" href="#">Profile</a>
-                    </li>
-                </ul>
-            </nav>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#" data-page="home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-page="profile">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-page="statistics">Statistics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-page="feedback">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-page="team">Our Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-page="sitemap">Sitemap</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-page="volunteer">Volunteer</a></li>
+        </ul>
+      </nav>
 
-            <!-- Mobile Menu Icon -->
-            <i class="bi bi-list menu-icon" id="menu-toggle" onclick="toggleSideMenu()"></i>
-        </div>
+
+      <!-- Mobile Menu Icon -->
+      <i class="fas fa-bars menu-icon" id="menu-toggle" onclick="toggleSideMenu()"></i>
     </div>
+  </div>
 
-    <!-- Mobile Side Menu -->
-    <div id="menu-overlay" class="overlay">
-        <div class="overlay-content">
-            <!-- Close Button -->
-            <div class="closeSideMenu">
-                <i class="bi bi-x-square" id="side-menu-close" onclick="closeSideMenu()"></i>
-            </div>
+  <!-- Mobile List View (hidden by default) -->
+  <div id="menu-overlay" class="overlay">
 
+    <div class="overlay-content">
 
-            <!-- Mobile Navigation -->
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" data-page="home" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" data-page="profile" id="profile-link" href="#">Profile</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" data-page="about" href="#">About</a></li> -->
-                <li class="nav-item"><a class="nav-link" data-page="statistics" href="#">Statistics</a></li>
-                <li class="nav-item"><a class="nav-link" data-page="feedback" href="#">Feedback</a></li>
-                <li class="nav-item"><a class="nav-link" data-page="team" href="#">Our Team</a></li>
-                <li class="nav-item"><a class="nav-link" data-page="sitemap" href="#">Sitemap</a></li>
-                <li class="nav-item"><a class="nav-link" data-page="volunteer" href="#">Volunteer</a></li>
-            </ul>
-        </div>
+      <div class="closeSideMenu">
+        <i class="fas fa-times" id="side-menu-close" onclick="closeSideMenu()"></i>
+      </div>
+
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" data-page="home" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" data-page="profile" id="profile-link" href="#">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" data-page="statistics" href="#">Statistics</a></li>
+        <li class="nav-item"><a class="nav-link" data-page="feedback" href="#">Feedback</a></li>
+        <li class="nav-item"><a class="nav-link" data-page="team" href="#">Our Team</a></li>
+        <li class="nav-item"><a class="nav-link" data-page="sitemap" href="#">Sitemap</a></li>
+        <li class="nav-item"><a class="nav-link" data-page="volunteer" href="#">Volunteer</a></li>
+      </ul>
     </div>
+  </div>
 </header>
+
+<script src="/js/app.js"></script>
+<script src="/src/components/header/header.js"></script>
+</body>
