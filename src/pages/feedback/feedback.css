@@ -28,9 +28,10 @@
   max-width: 600px;
 }
 
-.feedback-content h2 {
+.feedback-description h2 {
   font-size: var(--font-size-h2);
   color: var(--primary-blue);
+  font-family: var(--font-primary);
 }
 
 .feedback-image {
