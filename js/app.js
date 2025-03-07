@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //function to attach navigation listners
   function attachNavListeners() {
     const navLinks = document.querySelectorAll(
-      ".navbar-nav .nav-link, #menu-overlay .nav-link, #profile-link"
+      ".navbar-nav .nav-link, #menu-overlay .nav-link, #profile-link, .content-link"
     );
 
     navLinks.forEach((link) => {
@@ -50,13 +50,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const pagePaths = {
     "home": "/src/pages/home/home.html",
-    "about": "/src/pages/about/about.html",
     "statistics": "/src/pages/statistics/statistics.html",
     "feedback": "/src/pages/feedback/feedback.html",
     "ourteam": "/src/pages/ourteam/ourteam.html",
     "sitemap": "/src/pages/sitemap/sitemap.html",
     "volunteer": "/src/pages/volunteer/volunteer.html",
-    "profile": "/src/pages/profile/profile.html"
+    "profile": "/src/pages/profile/profile.html",
+
+    // Content Pages
+    "student1": "/src/pages/student1/oceanPollution.html",
+    "student2": "/src/pages/student2/marineLife.html",
+    "student3": "/src/pages/student3/coralReefProtection.html",
+    "student4": "/src/pages/student4/sustainableFishing.html"
   };
   
 
